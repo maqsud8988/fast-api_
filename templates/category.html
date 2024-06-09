@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {% for category in categories %}
+            {{ category.id }}
+            <li>
+                <h3> Name: {{ category.name }} </h3>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
